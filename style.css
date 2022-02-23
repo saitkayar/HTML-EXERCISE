@@ -1,0 +1,113 @@
+    /* ////fron family */
+    /* @import url('https://fonts.googleapis.com/css2?family=Redressed&family=Roboto+Slab:wght@100&display=swap');
+body {
+    text-align: center;
+}
+
+p {
+    font-family: 'Redressed', cursive;
+    color: black !important;
+}
+
+div {
+    font-family: 'Roboto Slab', serif;
+} */
+    /* -------------------------------- */
+    /* animasyon */
+    /* .kutu {
+    width: 100px;
+    height: 100px;
+    background-color: royalblue;
+    transition: 0.3s;
+    animation: cube-animation 2s infinite;
+    animation-duration: 5s;
+}
+
+@-webkit-keyframes cube-animation {
+    0% {
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+        transition: 0.3s;
+    }
+    50% {
+        width: 500px;
+        height: 500px;
+        background-color: purple;
+    }
+    100% {
+        width: 300px;
+        height: 300px;
+        background-color: red;
+    }
+} */
+    /* .kutu:hover {
+    width: 300px;
+    height: 300px;
+    background-color: yellow;
+} */
+    
+    .kutu {
+        width: 100px;
+        height: 100px;
+        background-color: royalblue;
+        transition: 2s;
+        position: absolute;
+        animation: cube-animation 3s;
+    }
+    
+    @keyframes cube-animation {
+        /* 0% {
+            left: 0%;
+            top: 0%;
+            transform: translate(0%, 0%);
+        }
+        25% {
+            top: 0%;
+            left: 100%;
+            transform: translate(-100%, 0%);
+        }
+        50% {
+            top: 100%;
+            left: 100%;
+            transform: translate(-100%, -100%);
+        }
+        75% {
+            top: 100%;
+            left: 0%;
+            transform: translate(0%, -100%);
+        }
+        100% {
+            top: 0%;
+            left: 0%;
+            transform: translate(0%, 0%);
+        } */
+        0% {
+            left: 0%;
+            top: 0%;
+            transform: translate(0%, 0%);
+        }
+        25% {
+            top: 25%;
+            left: 25%;
+            transform: translate(-25%, 0%);
+            opacity: 0.5;
+        }
+        50% {
+            top: 0%;
+            left: 50%;
+            transform: translate(-50%, 0%);
+            opacity: 0.8;
+        }
+        75% {
+            top: 25%;
+            left: 75%;
+            transform: translate(-75%, 0%);
+            opacity: 0.2;
+        }
+        100% {
+            left: 100%;
+            top: 0%;
+            transform: translate(-100%, 0%);
+        }
+    }

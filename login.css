@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color: rgba(0, 0, 0, 0.3);
+    --header-color: white;
+    --button-color: green;
+}
+
+body {
+    height: 100vh;
+    background-image: center center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body::after {
+    content: "";
+    width: 100%;
+    background-image: url("River.jpg") !important;
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.content {
+    width: 50%;
+    height: 50vh;
+    background-color: var(--background-color);
+    text-align: center;
+    border-radius: 20px;
+    display: relative;
+}
+
+header,
+h2 {
+    margin-top: 70px;
+    color: var(--header-color);
+}
+
+.form-items {
+    margin-top: 30px;
+}
+
+.form-items input {
+    width: 70%;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 40px;
+    border-radius: 15px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    color: white;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--background-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo i {
+    font-size: 50px;
+}
+
+input {
+    outline: 0;
+    border: 0;
+}
+
+input:focus {
+    outline: none;
+    border: none;
+}
+
+button {
+    font-size: 20px;
+    margin-top: 30px;
+    width: 70%;
+    height: 30px;
+    background-color: #68c856;
+    transition: 2s;
+    border-radius: 15px;
+    border: none
+}
+
+button:hover {
+    background-color: var(--button-color);
+    border: greenyellow solid 1px;
+}
+
+.forms {
+    position: relative;
+}
+
+.icons i {
+    position: absolute;
+    left: 16%;
+    top: 22%;
+    font-size: 25px;
+    color: black;
+}
+
+.icons2 i {
+    position: absolute;
+    left: 16%;
+    top: 72%;
+    font-size: 25px;
+    color: black;
+}

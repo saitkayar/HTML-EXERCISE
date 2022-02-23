@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     :root {
+        /*root iiçnde tanımlananan değişkenler ve değişkine verilen değerler diğer alanlarda var özelliği kullanılarak çağıralabilir*/
+        --box-color: red;
+        --box-width: 300px;
+    }
+    
+    .kutu1 {
+        background-color: var(--box-color);
+        width: var(--box-width);
+        height: 100px;
+        margin-top: 10px;
+    }
+    
+    .kutu2 {
+        background-color: var(--box-color);
+        width: 100px;
+        height: 100px;
+        margin-top: 10px;
+    }
+    
+    .kutu3 {
+        background-color: var(--box-color);
+        width: 100px;
+        height: 100px;
+        margin-top: 10px;
+    }
+</style>
+
+<body>
+
+    <div class="kutu1">
+
+    </div>
+    <div class="kutu2">
+
+    </div>
+    <div class="kutu3">
+
+    </div>
+
+
+</body>
+
+</html>
